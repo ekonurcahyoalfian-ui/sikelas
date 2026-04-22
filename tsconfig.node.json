@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "/tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "types": ["node"],
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "strict": false,
+    "paths": {
+      "@tailwindcss/vite":    ["/tmp/nm-sikelas/node_modules/@tailwindcss/vite/dist/index.d.mts"],
+      "vite":                 ["/tmp/nm-sikelas/node_modules/vite/dist/node/index.d.ts"]
+    },
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": false
+  },
+  "include": ["vite.config.ts"]
+}

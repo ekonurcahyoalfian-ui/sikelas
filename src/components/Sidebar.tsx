@@ -59,6 +59,7 @@ export default function Sidebar({ user, activePage, onNavigate, onLogout }: Side
     { id: 'presensi-guru', label: 'Presensi & Jurnal', icon: <ClipboardList size={18} /> },
     { id: 'jurnal-guru', label: 'Jurnal Mengajar', icon: <FileText size={18} /> },
     { id: 'nilai-guru', label: 'Input Nilai', icon: <Star size={18} /> },
+    { id: 'profil-guru', label: 'Profil Saya', icon: <Settings size={18} /> },
     ...(user.is_walas ? [{ id: 'walas', label: 'Menu Wali Kelas', icon: <UserCheck size={18} /> }] : []),
   ];
 

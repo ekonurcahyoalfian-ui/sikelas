@@ -25,6 +25,7 @@ import PresensiGuru from './pages/guru/PresensiGuru';
 import JurnalGuru from './pages/guru/JurnalGuru';
 import NilaiGuru from './pages/guru/NilaiGuru';
 import WalasPage from './pages/guru/WalasPage';
+import ProfilGuru from './pages/guru/ProfilGuru';
 
 export interface AppUser {
   id: number;
@@ -123,6 +124,7 @@ export default function App() {
         case 'jurnal-guru': return <JurnalGuru user={user} />;
         case 'nilai-guru': return <NilaiGuru user={user} />;
         case 'walas': return <WalasPage user={user} />;
+        case 'profil-guru': return <ProfilGuru user={user} onProfileUpdated={(u) => { saveSession(u); setUser(u); }} />;  
         default: return <DashboardGuru user={user} />;
       }
     }

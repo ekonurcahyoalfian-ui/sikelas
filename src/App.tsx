@@ -119,7 +119,7 @@ export default function App() {
       }
     } else {
       switch (page) {
-        case 'dashboard-guru': return <DashboardGuru user={user} />;
+        case 'dashboard-guru': return <DashboardGuru user={user} onNavigate={setPage} />;
         case 'presensi-guru': return <PresensiGuru user={user} />;
         case 'jurnal-guru': return <JurnalGuru user={user} />;
         case 'nilai-guru': return <NilaiGuru user={user} />;

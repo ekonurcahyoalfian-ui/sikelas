@@ -194,6 +194,14 @@ export default function Sidebar({ user, activePage, onNavigate, onLogout }: Side
           <LogOut size={18} />
           {!collapsed && <span>Keluar</span>}
         </button>
+        {/* Footer Copyright */}
+      <div className="px-4 py-3 border-t border-slate-700/50">
+      <p className="text-xs text-slate-500 text-center leading-relaxed">
+      Copyright © 2026<br />
+      <span className="text-slate-400 font-medium">RUMAHIMI</span><br />
+      Sistem Manajemen Kelas
+  </p>
+</div>
       </div>
     </div>
   );
@@ -244,15 +252,7 @@ export default function Sidebar({ user, activePage, onNavigate, onLogout }: Side
             </>
           )}
         </AnimatePresence>
-        {/* Footer Copyright */}
-<div className="px-4 py-3 border-t border-slate-700/50">
-  <p className="text-xs text-slate-500 text-center leading-relaxed">
-    Copyright © 2026<br />
-    <span className="text-slate-400 font-medium">RUMAHIMI</span><br />
-    Sistem Manajemen Kelas
-  </p>
-</div>
-      </div>
+        </div>
     </>
   );
 }
